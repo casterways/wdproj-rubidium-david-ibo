@@ -1,0 +1,266 @@
+/*=================doc=================*/
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin:0;
+  padding:0;
+}
+
+body {
+  font-family: "Schoolbell", serif;
+  font-style: normal;
+  user-select: none;
+}
+
+html, body {
+  height:100%;
+  display:flex;
+  flex-direction:column;
+}
+
+/* images and videos max out at full width */
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+/*=================================================*/
+
+
+
+/*=================heading=================*/
+header {
+  background-color:#C0C0C0;
+}
+
+#name {
+  text-align:center;
+  padding-top:4px;
+  padding-bottom:4px;
+}
+/*=================================================*/
+
+
+
+/*=================nav=================*/
+nav{
+  display:flex;
+  justify-content:space-between;
+  background-color:#777777;
+  
+}
+
+#shop-button {
+  font-weight:bold;
+  display:inline;
+  text-align:right;
+  font-size:20px;
+  margin-left:12%;
+  margin-top:4px;
+  margin-bottom:4px;
+  padding:8px;
+  padding-left:12px;
+  padding-right:12px;
+  text-decoration:none;
+  background-color:rgba(0, 24, 77, 0.9);
+  color:#FFFDEC;
+  border-radius:12px;
+  transition: 0.15s;
+}
+#shop-button:hover {
+  background-color:#FFFDEC;
+  color:rgb(0, 24, 77);
+}
+#shop-button:active {
+  transition:0.05s;
+  opacity:0.5;
+}
+
+#prestige-button {
+  font-weight:bold;
+  text-align:left;
+  font-size:20px;
+  margin-right:12%;
+  margin-top:4px;
+  margin-bottom:4px;
+  padding:8px;
+  padding-left:12px;
+  padding-right:12px;
+  text-decoration:none;
+  background-color:rgba(0, 24, 77, 0.9);
+  color:#FFFDEC;
+  border-radius:12px;
+  transition: 0.15s;
+}
+#prestige-button:hover {
+  background-color:#FFFDEC;
+  color:rgb(0, 24, 77);
+}
+#prestige-button:active {
+  transition:0.05s;
+  opacity:0.5;
+}
+/*=================================================*/
+
+
+
+/*=================section=================*/
+section {
+  display:flex;
+  height:100vh;
+  justify-content:space-between;
+
+}
+
+/*---gallery---*/
+
+#gallery {
+  background-color:#fff2c5;
+  width:30%;
+}
+
+#gallery .amName {
+  text-align:center;
+  margin:28px;
+}
+
+#gallery .amName h1 {
+  font-size:40px;
+  display:inline;
+  padding:12px;
+  padding-left:20px;
+  padding-right:20px;
+  background-color:rgba(255,255,255,0.5);
+  border-radius:20px;
+}
+#amulets {
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  overflow-y:scroll;
+  height:100vh;
+  max-height:700px;
+  background-color:rgb(237, 224, 180);
+  font-size:20px;
+}
+
+.amuletCont {
+  background-color:rgb(245, 236, 208);
+  display:inline-block;
+  text-align:center;
+  margin-top:20px;
+  margin-bottom:10px;
+}
+.NameCont {
+  background-color:rgb(245, 236, 208);
+  text-align:center;
+}
+.amuletName {
+  display:inline;
+  text-align:center;
+}
+
+/*---------*/
+
+/*---star---*/
+
+#star {
+  background-color:#001839;
+  width:39.99%;
+}
+#star .username h1 {
+  font-size:36px;
+  padding:8px;
+  margin-top:20px;
+  text-align:center;
+  color:white;
+}
+#star .currency {
+  text-align:center;
+  margin:8px;
+}
+#star .currency h1 {
+  font-size:32px;
+  display:inline;
+  padding:12px;
+  padding-left:20px;
+  padding-right:20px;
+  background-color:rgba(255, 255, 255, 0.5);
+  color:white;
+  border-radius:20px;
+}
+
+#star .star {
+  display:flex;
+  justify-content:center;
+  margin:10%;
+  transition:0.1s;
+}
+#star .star button {
+  padding:10px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  height:400px;
+  width:400px;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  transition:0.1s;
+}
+#star .star button:hover {
+  transform: scale(1.05);
+}
+#star .star button:active {
+  transform: scale(0.95);
+}
+
+/*---------*/
+
+/*---stats---*/
+#stats {
+  background-color:#fff2c5;
+  width:30%;
+}
+
+#stats .statName {
+  text-align:center;
+  margin:28px;
+}
+
+#stats .statName h1 {
+  font-size:40px;
+  display:inline;
+  padding:12px;
+  padding-left:20px;
+  padding-right:20px;
+  background-color:rgba(255,255,255,0.5);
+  border-radius:20px;
+}
+#stats .stat_vals {
+  text-align:center;
+  margin:28px;
+  margin-top:30%;
+}
+#stats .stat_vals div{
+  margin-top:20px;
+}
+#stats .stat_vals p{
+  font-size:40px;
+  display:inline;
+}
+/*---------*/
+
+/*=================================================*/
+
+footer {
+  background-color:#777777;
+  padding:4px;
+  padding-right:8px;
+  padding-left: 8px;
+}
+

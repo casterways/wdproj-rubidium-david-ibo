@@ -1,0 +1,17 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin:0;
+  padding:0;
+}
+
+body {
+  background-image: url(https://cdn.glitch.global/4526fff3-f81b-4a69-852a-05c552df4c13/PlanetsBg.jpg?v=1737729168854);
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
+}

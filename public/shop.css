@@ -1,0 +1,168 @@
+/*=================doc=================*/
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin:0;
+  padding:0;
+}
+
+body {
+  font-family: "Schoolbell", serif;
+  font-style: normal;
+}
+
+html, body {
+  height:100%;
+  display:flex;
+  flex-direction:column;
+}
+
+/* images and videos max out at full width */
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+/*=================================================*/
+
+
+
+/*=================heading=================*/
+header {
+  background-color:#C0C0C0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-right:20px;
+  z-index: 999;
+}
+
+#name {
+  text-align:center;
+  padding-top:4px;
+  padding-bottom:4px;
+}
+/*=================================================*/
+
+
+
+/*=================nav=================*/
+nav{
+  display:flex;
+  justify-content:space-between;
+  background-color:#777777;
+  
+}
+
+#star-button {  /* designs and positions the button*/ 
+  font-weight:bold;
+  display:inline;
+  text-align:right;
+  font-size:20px;
+  margin-right:12%;
+  margin-top:4px;
+  margin-bottom:4px;
+  padding:8px;
+  padding-left:12px;
+  padding-right:12px;
+  text-decoration:none;
+  background-color:rgba(0, 24, 77, 0.9);
+  color:#FFFDEC;
+  border-radius:12px;
+  transition: 0.15s;
+}
+#star-button:hover {  /* Changes style while hovering over button */
+  background-color:#FFFDEC;
+  color:rgb(0, 24, 77);
+}
+#star-button:active {
+  transition:0.05s;
+  opacity:0.5;
+}
+
+#prestige-button {  /* styles and positions the button */
+  font-weight:bold;
+  text-align:left;
+  font-size:20px;
+  margin-left:12%;
+  margin-top:4px;
+  margin-bottom:4px;
+  padding:8px;
+  padding-left:12px;
+  padding-right:12px;
+  text-decoration:none;
+  background-color:rgba(0, 24, 77, 0.9);
+  color:#FFFDEC;
+  border-radius:12px;
+  transition: 0.15s;
+}
+#prestige-button:hover {  /* Changes style while hovering over button */
+  background-color:#FFFDEC;
+  color:rgb(0, 24, 77);
+}
+#prestige-button:active {
+  transition:0.05s;
+  opacity:0.5;
+}
+/*=================================================*/
+
+
+
+/*=================section=================*/
+section {
+  display:flex;
+  flex:1;
+  background-color:#f0d6f1;
+}
+
+#shopUI {
+  height:100%;
+  width:100%;
+}
+
+#shopName {  /* styles the shop name */
+  font-size:50px;
+  font-weight:bold;
+  text-align:center;
+  margin-top:120px;
+}
+
+#shopCont {
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 40px;
+  padding:20px;
+}
+.amuletSet {
+  background-color:#e2c5e3;
+  border-radius:30px;
+  display:inline-block;
+  text-align:center;
+  font-size:30px;
+  font-weight:bold;
+  margin-left:70px;
+  margin-right:70px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  transition:0.1s;
+}
+
+.amuletSet:hover {
+  transform: scale(1.05);
+  cursor:pointer;
+}
+
+/*=================================================*/
+
+footer {
+  background-color:#777777;
+  padding:4px;
+  padding-right:8px;
+  padding-left: 8px;
+}
